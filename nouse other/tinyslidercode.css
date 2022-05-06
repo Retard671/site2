@@ -1,0 +1,113 @@
+/* JS */
+
+// tinyslider
+  var slider = tns({
+    container: '.tiny_slider__items',
+    items: 1,
+    slideBy: 'page',
+    autoplay: false,
+    navPosition: 'bottom',
+    controls: false,
+    nav: true,
+    responsive: {
+      992: {
+        nav: false,
+      }
+    }
+  });
+
+
+document.querySelector('.slick-prev').onclick = function () {
+  slider.goTo('prev');
+};
+document.querySelector('.slick-next').onclick = function () {
+  slider.goTo('next');
+};
+
+/* JS */
+
+
+/* CSS */
+
+// ТИНИ СЛАЙДЕР СТИЛИ
+.slick-prev, .slick-next {
+        width: 31px; // ширина стрелки
+    height: 50px; // высота стрелки
+}
+.slick-prev {
+    left: 100px;
+}
+.slick-next {
+    right: 100px;
+}
+.container{
+    position: relative;
+}
+
+// СТИЛИЗАЦИЯ  ПЕРЕКЛЮЧАТЕЛЕЙ
+.tns-nav{
+    // margin: 0 auto;
+    text-align: center;
+    button{
+        padding: 0px;
+        margin: 0 14px ;
+        width: 8px;
+        height: 8px;
+        background-color: rgb(175, 196, 181);
+        border: 0px;
+        border-radius: 50%;
+    }
+    .tns-nav-active{
+        background-color: rgb(37, 36, 36);
+    }
+}
+.tiny_carousel {
+    min-height: 700px;
+    padding: 100px 0 60px 0;
+    background-color: rgb(205, 216, 218);
+}
+.tiny_slider {
+}
+.tiny_slider__items {
+}
+// ТИНИ СЛАЙДЕР СТИЛИ
+@media (max-width: 991px) {
+    // тини слайдер
+    .slick-prev, .slick-next {
+        display: none;
+    }
+}
+
+/* CSS */
+
+/* HTML */
+
+    <section class="tiny_carousel">
+      <div class="container">
+        <div class="col-12 col-md-8 offset-md-2">
+          <div class="tiny_slider">
+            <div class="tiny_slider__items">
+              <img src="assets/img/5carousel/1slide.png" alt="1slide.png" />
+              <img src="assets/img/5carousel/2slide.png" alt="2slide.png" />
+              <img src="assets/img/5carousel/0slide.png" alt="0slide.png" />
+            </div>
+            <button type="button" class="slick-prev"><img class="arr1 arrows" src="assets/img/5carousel/arrow_left.png" alt="" /></button>
+            <button type="button" class="slick-next"><img class="arr1 arrows" src="assets/img/5carousel/arrow_right.png" alt="" /></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+/* HTML */
+
+
+    <!-- tiny_slider css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" />
+    <!-- tiny_slider css -->
+
+
+
+    <!-- tiny_slider js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
+    <!-- tiny_slider js -->
