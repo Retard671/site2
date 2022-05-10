@@ -1,0 +1,247 @@
+// 700
+// 35 65
+.fscreen {
+    min-height: 700px;
+    padding: 35px 0 65px 0;
+    background: url(../img/2firstscreen/background1.png) center center/ cover no-repeat;
+    transition: all 2s ease;
+}
+
+.fscreen {
+    &__row1{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        margin-bottom: 130px;
+    }
+    &__logo{
+
+    }
+    &__links{
+        width: 50%;
+        margin-top: 20px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    &__link{
+        margin: 0 5px;
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 13px;
+        // line-height: 26px;
+        /* identical to box height, or 200% */
+
+        display: flex;
+        align-items: center;
+        text-align: right;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+    }
+}
+
+
+.container_fscreen{
+    position: relative;
+    min-height: 600px;
+}
+.fscreen {
+    &__phone_img{
+        position: absolute;
+        bottom: -65px;
+        right: 0;
+    }
+}
+
+
+
+.title {
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 48px;
+    /* or 114% */
+
+    align-items: center;
+    
+    color: #FFFFFF;
+    &_fscreen{
+        width: 50%;
+        margin-bottom: 26px;
+    }
+}
+.subtitle {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+    /* or 125% */
+
+    align-items: center;
+
+    color: #FFFFFF;
+    &_fscreen{
+        margin-bottom: 38px;
+    }
+}
+.btn {
+    width: 241px;
+    height: 60px;
+
+    background: $maincolor;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.07);
+
+    border-radius: 5px;
+    border: 0px;
+
+    font-weight: 700;
+    font-size: 16px;
+
+    align-items: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    &_fscreen{
+
+    }
+}
+
+// slider
+.fscroll {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+
+// кнопки слайдера
+.fscroll {
+    
+    &__left{
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        margin-right: 10px;
+        transition: all .5s linear;
+        &:hover{
+           color: rgb(170, 170, 170); 
+           cursor: pointer;
+        }
+    }
+    &__right{
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        margin-left: 10px;
+        transition: all .5s linear;
+        &:hover{
+           color: rgb(170, 170, 170); 
+           cursor: pointer;
+        }
+    }
+}
+.fscroll__circle {
+    width: 14px;
+    height: 14px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    margin: 0 2px;
+    transition: all .5s linear;
+    &-active{
+        background-color: #fff;
+    }
+    &:hover{
+           background-color: rgb(170, 170, 170);
+           border: 2px solid rgb(170, 170, 170); 
+           cursor: pointer;
+        }
+}
+.test {
+}
+
+
+
+
+
+
+@media (max-width: 1400px) {
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 991px) {
+    .fscreen {
+        &__phone_img{
+            height: 70%;
+            position: absolute;
+            bottom: -65px;
+            right: 0;
+        }
+    }
+    .title_fscreen {
+        font-size: 31px;
+    }
+    .subtitle_fscreen {
+        font-size: 20px;
+    }
+}
+@media (max-width: 767px) {
+    .fscreen {
+        &__phone_img{
+            height: 50%;
+            position: absolute;
+            bottom: -65px;
+            right: 0;
+        }
+    }
+    .title_fscreen {
+        font-size: 25px;
+    }
+    .subtitle_fscreen {
+        font-size: 18px;
+    }
+}
+@media (max-width: 575px) { 
+    .fscreen {
+        &__row1{
+            margin-bottom: 60px;
+            flex-wrap: wrap;
+        }
+        &__phone_img{
+            display: none;
+        }
+        &__logo{
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+    }
+    .fscreen{
+        &__links {
+            width: 100%;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        &__link {
+            margin: 0 10px;
+            margin-bottom: 10px;
+        }
+    }
+    .title_fscreen {
+        text-align: center;
+        width: 100%;
+    }
+    .subtitle_fscreen {
+        text-align: center;
+    }
+    .btn_fscreen{
+        display: block;
+        margin: 0 auto;
+        width: 220px;
+    }
+}
+@media (max-width: 320px) {
+}

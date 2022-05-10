@@ -1,0 +1,50 @@
+.header {
+    min-height: 86px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.header {
+    &__items{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    &__item{
+        margin: 10px 0;
+        width: 240px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+    }
+    &__flag{
+        margin-right: 10px;
+    }
+    &__descr{
+
+    }
+    &__country{
+        margin-bottom: 4px;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 13px;
+        // /* or 129% */
+
+        align-items: center;
+
+        color: #242424;
+    }
+    &__tel_adr{
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 16px;
+        /* or 150% */
+
+        align-items: center;
+
+        color: #242424;
+    }
+}

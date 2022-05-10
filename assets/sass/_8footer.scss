@@ -1,0 +1,160 @@
+.footer {
+    min-height: 498px;
+    padding: 48px 0 38px 0;
+    background-color: #0082a1;
+}
+
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.title {
+    &_about_company{
+        margin-bottom: 16px;
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: #FFFFFF;
+    }
+}
+
+.footer__logo {
+    display: block;
+    margin-bottom: 20px;
+}
+.about_company__text {
+    margin-bottom: 5px;
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+}
+
+
+
+.footer__list {
+    margin-left: 0;
+    padding-left: 0;
+    & li{
+        font-weight: 300;
+        font-size: 14px;
+        // line-height: 19px;
+        line-height: 22px;
+
+        list-style-type: none;
+        color: #FFFFFF;
+        & a{
+            text-decoration: none;
+            color: #FFFFFF;
+            &:hover{
+                color: rgb(170, 170, 170); 
+                cursor: pointer;
+            }
+        }
+        &:first-child{
+            font-weight: 700;
+            font-size: 16px;
+        }
+    }  
+}
+
+
+
+.about_company {
+    margin-right: 10px;
+    margin-bottom: 40px;
+    width: 380px;
+    // flex-grow:4;
+}
+.modules {
+    margin: 0 10px;
+    margin-bottom: 40px;
+    // flex-grow:3;
+}
+.industries {
+    margin: 0 10px;
+    margin-bottom: 40px;
+    // flex-grow:1;
+}
+.about_us {
+    margin-left: 10px;
+    margin-bottom: 40px;
+    // flex-grow:1;
+}
+
+
+
+
+.footer_bottom {
+    
+}
+.footer {
+    &__line{
+        width: 100%;
+        margin-bottom: 34px;
+        height: 1px;
+        background-color: #fff;
+        // border-top: 1px solid rgb(255, 255, 255);
+    }
+    &__copyrite{
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 17px;
+
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
+
+
+
+
+@media (max-width: 1400px) {
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+    .footer__top {
+        flex-direction: column;
+        // justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .about_company {
+        // margin-right: 10px;
+        margin: 0;
+        margin-bottom: 40px;
+        // width: 380px;
+        width: auto;
+    }
+    .modules {
+        // margin: 0 10px;
+        margin: 0;
+        margin-bottom: 40px
+    }
+    .industries {
+        // margin: 0 10px;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    .about_us {
+        // margin-left: 10px;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) { 
+}
+@media (max-width: 320px) {
+}

@@ -1,6 +1,40 @@
 *{
     font-family: 'Roboto', sans-serif;
 }
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+@media (min-width: 1400px) {
+    .container{
+        width: 1320px;
+    }
+}
+@media (min-width: 1200px) {
+    .container{
+        width: 1140px;
+    }
+}
+@media (min-width: 992px) {
+    .container{
+        width: 960px;
+    }
+}
+@media (min-width: 768px) {
+    .container{
+        width: 720px;
+    }
+}
+@media (min-width: 576px) { 
+    .container{
+        width: 540px;
+    }
+}
+@media (max-width: 576px) {
+    .container{
+        width: 100%;
+    }
+}
 // other
 @import "other/bootstrap-reboot";
 @import "other/bootstrap-grid";
@@ -10,7 +44,7 @@
 
 @import "1header";
 @import "2first_screen";
-@import "3with_us";
+@import "3width_us";
 @import "4slider";
 @import "5benefits";
 @import "6you_data";
@@ -23,11 +57,11 @@
 }
 @media (max-width: 1200px) {
 }
-@media (max-width: 991px) {
+@media (max-width: 992px) {
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 }
-@media (max-width: 575px) { 
+@media (max-width: 576px) { 
 }
 @media (max-width: 320px) {
 }

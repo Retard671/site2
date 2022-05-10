@@ -1,0 +1,210 @@
+.exp_solution {
+    min-height: 890px;
+    padding: 76px 0 78px 0;
+    background: url(../img/4slider/background.png) center center/ cover no-repeat;
+    position: relative;
+}
+
+.title {
+    &_exp_solution{
+        margin-bottom: 24px;
+
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 36px;
+
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
+
+.slindicators {
+    margin: 0 auto;
+    padding: 6px 0;
+    margin-bottom: 36px;
+    width: 74.2%;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.slindicator {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 50px;
+
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: all .5s linear;
+    &:hover{
+           color: rgb(170, 170, 170); 
+           cursor: pointer;
+        }
+    &-active{
+        color: #00C2F0;
+        &:hover{
+           color: #00C2F0;
+           cursor: pointer;
+        }
+    }
+    &__divider{
+        height: 50px;
+        border-right: 1px solid #fff;
+        &-none{
+            border-right: 0px solid #fff;
+        }
+    }
+}
+
+
+
+
+
+// .slider4__border{
+//     margin: 0 auto;
+//     &_img{
+//         display: block;
+//         margin: 0 auto;
+//         width: 73%;
+//     }
+// }
+.slider4__border{
+    display: block;
+    margin: 0 auto;
+    width: 73%;
+}
+
+
+.slides{
+    
+}
+.slide{
+    opacity: 0%;
+    transition: opacity 1.5s linear;
+    &-active{
+        opacity: 100%;
+    }
+
+    // ниже старый код
+    position: absolute; //абсолютная позиция относительно slider4
+    // top: 37px;
+    top: 6%;
+    left: 50%;
+    //  width: 73%;
+    transform: translateX(-50%);
+    &__img{
+        // width: 73%;
+        width: 54%;
+    }
+}
+.slider4{
+    position: relative;
+    // height: 560px;
+    // &__macbook{
+    //     // height: 100%;
+    //     // background: url(../img/4slider/macbook-air.png) center center/ cover no-repeat;
+    // }
+}
+
+
+.arrow{
+    position: absolute;
+}
+.slider4{
+    &_prev{
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10%;
+        transition: all .5s linear;
+        text-decoration: none;
+        &:hover{
+           cursor: pointer;
+        }
+    }
+    &_next{
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10%;
+        transition: all .5s linear;
+        text-decoration: none;
+        img{
+            height: 13%;
+            transition: all .5s linear;
+
+        }
+        &:hover{
+           cursor: pointer;
+        }
+    }
+
+}
+
+
+
+@media (max-width: 1400px) {
+}
+@media (max-width: 1200px) {
+    .exp_solution {
+        background: url(../img/4slider/background.png) 80% 0%/ cover no-repeat;
+    }
+}
+
+@media (max-width: 992px) {
+    .container_exp_solution{
+        max-width: 100%;
+    }
+    .slindicators{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .slindicator__divider{
+        display: none;
+    }
+
+
+    .slider4__border {
+        width: 90%;
+    }
+    .slide__img {
+        width: 66%;
+        top: 6.5%;
+    }
+    .slider4{
+        &_prev{
+            left: 7%;
+        }
+        &_next{
+            right: 7%;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .slindicator {
+        font-size: 13px; 
+        width: 111px;
+    }
+    .slindicators {
+        flex-wrap: wrap;
+    }
+
+}
+@media (max-width: 576px) {
+    .title {
+        &_exp_solution{
+            font-size: 24px; 
+        }
+    } 
+}
+@media (max-width: 320px) {
+    .title {
+        &_exp_solution{
+            font-size: 20px; 
+        }
+    } 
+}
