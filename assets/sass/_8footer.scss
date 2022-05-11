@@ -1,7 +1,7 @@
 .footer {
     min-height: 498px;
     padding: 48px 0 38px 0;
-    background-color: #0082a1;
+    background-color: $footer_bg;
 }
 
 
@@ -54,6 +54,7 @@
         & a{
             text-decoration: none;
             color: #FFFFFF;
+            transition: color .25s linear;
             &:hover{
                 color: rgb(170, 170, 170); 
                 cursor: pointer;

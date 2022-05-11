@@ -120,4 +120,19 @@ document.querySelector('.slider4_next').addEventListener('click',  function() {
 // СЛАЙДЕР ЧЕТВЕРТОЙ СЕКЦИИ
 
 
+// МОДАЛЬНОЕ ОКНО
 
+let btnModal = document.querySelectorAll('.btn-open_modal');
+for (let i = 0; i < btnModal.length; i++) {
+    btnModal[i].addEventListener('click',  function() {
+        document.querySelector(".overlay").style.display = "block";
+        document.querySelector(".modal").style.display = "block";
+        console.log('нажатие на переключатели')
+    });
+}
+
+document.querySelector('.modal__close').addEventListener('click',  function() {
+        document.querySelector(".overlay").style.display = "none";
+        document.querySelector(".modal").style.display = "none";
+        console.log('акрытие окна')
+    });

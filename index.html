@@ -59,16 +59,16 @@
         <div class="fscreen__row1">
           <img class="fscreen__logo" src="assets/img/2firstscreen/logo.png" alt="logo" />
           <div class="fscreen__links">
-            <a class="fscreen__link">Главная</a>
-            <a class="fscreen__link">Модули</a>
-            <a class="fscreen__link">Отрасли</a>
-            <a class="fscreen__link">О нас</a>
-            <a class="fscreen__link">Наши обязательства</a>
+            <a href="#" class="fscreen__link">Главная</a>
+            <a href="#" class="fscreen__link">Модули</a>
+            <a href="#" class="fscreen__link">Отрасли</a>
+            <a href="#" class="fscreen__link">О нас</a>
+            <a href="#" class="fscreen__link">Наши обязательства</a>
           </div>
         </div>
         <h1 class="title title_fscreen">Управляй своим бизнесом через Smartphone</h1>
         <h4 class="subtitle subtitle_fscreen">PRENGI - Платформа для прозрачного <br />управления бизнесом</h4>
-        <button class="btn btn_fscreen">получить доступ</button>
+        <button class="btn btn-open_modal btn_fscreen">получить доступ</button>
         <img class="fscreen__phone_img" src="assets/img/2firstscreen/phone.png" alt="phone" />
         <!-- скролл -->
         <div class="fscroll">
@@ -201,7 +201,7 @@
         </div> -->
         <img src="assets/img/7begin_work/icon.png" alt="icon" class="bgn_work__img">
         <h3 class="title title_bgn_work">Приступить очень просто!<br>Нужно получить доступ и начать работу!</h3>
-        <button class="btn btn_bgn_work">Связаться с нами</button>
+        <button class="btn btn-open_modal btn_bgn_work">Связаться с нами</button>
       </div>
     </section>
 
@@ -261,7 +261,21 @@
       </div>
     </section>
 
-
+    <div class="overlay">
+      <div class="modal">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="modal__close bi bi-x-circle" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+        </svg>
+        <h3 class="title title_modal">Оставьте свои данные, и мы кабанчиком обкашляем все вопросики!</h3>
+        <form action="" class="modal__form">
+          <input name="name" class="modal__input" type="text" placeholder="Имя">
+          <input name="phone" class="modal__input" type="text" placeholder="Телефон">
+          <input name="email" class="modal__input" type="email" placeholder="Email">
+          <button type="submit" class="btn btn-modal">Связаться с нами!</button>
+        </form>
+      </div>
+    </div>
 
     <script src="assets/js/script.js"></script>
   </body>
